@@ -1,0 +1,16 @@
+How I set up my MLFlow traking server :
+
+1. I created a Space on Hugging face to host my MLFlow traking server and making it available for my team
+2. I cloned the folder and droped in :
+----A Dockerfile
+----A requirements.txt
+3. I declared the PORT 7860 on variable in my Hugging Face settings to avoid writing it in my Dockerfile
+4. I created a trymymlflow.ipnb to test if my MLFlow was correctly created
+5. I copied the link of my MLFLow thanks to the "share" button
+6. I created the artifact store with AWS S3 bucket (making sure the user has full access)
+7. I added the ARTIFACT_STORE_URI in my secret variables in Hugging Face
+8. I created new secret variables in Hugging Face : AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+9. I created a BDD on Neon.tech to host the metrics on my experiments (BACKEND_STORE_URI)
+10. I saved the BACKEND_STORE_URI in secret variables in Hugging Face
+11. I created a secret.sh and wrote my AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY on it, and launched the file in my terminal
+12. Finaly in the same notebook where I trained my model, I created my experiment and set it to save the metrics in my MLFlow traking server !
