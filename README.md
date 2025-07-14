@@ -20,5 +20,8 @@ In addition to the above question, the Data Science team is working on *pricing 
 ## Deliverable 📬
 
 - A **dashboard** to bring to Getaround team the main insights about rental delay analysis (accessible on [HuggingFace](https://huggingface.co/spaces/myriamgoyet/Getaround_dashboard))
-- The **whole code** stored in a **Github repository**. You will include the repository's URL.
-- An **documented online API** on Hugging Face server 
+- A Machine Learning model trained to predict rental daily price according to the car caracteristiques (metrics of the model saved with [MLFlow](https://myriamgoyet-mlflow-getaround.hf.space/#/experiments/2?viewStateShareKey=18ffe60a67aa365fe49c7306d732974666332474b1684e47b8a1af1298c6cf2c&compareRunsMode=TABLE))
+- A documented API accessible from the dashboard with a /predict endpoint [API Documentation](https://myriamgoyet-api-getaround.hf.space/docs)
+
+To request the API :
+
