@@ -2,10 +2,8 @@
 Project completed as part of my Data Science Fullstack training at Jedha (Paris).
 
 ## Context 
-GetAround is the Airbnb for cars. You can rent cars from any person for a few hours to a few days! Founded in 2009, this company has known rapid growth. In 2019, they count over 5 million users and about 20K available cars worldwide. 
-
-When using Getaround, drivers book cars for a specific time period, from an hour to a few days long. They are supposed to bring back the car on time, but it happens from time to time that drivers are late for the checkout.
-
+GetAround is the Airbnb for cars. You can rent cars from any person for a few hours to a few days!     
+When using Getaround, drivers book cars for a specific time period, from an hour to a few days long. They are supposed to bring back the car on time, but it happens from time to time that drivers are late for the checkout.     
 Late returns at checkout can generate high friction for the next driver if the car was supposed to be rented again on the same day.
 
 ## Goals 🎯
@@ -19,10 +17,11 @@ In addition to the above question, the Data Science team is working on *pricing 
 
 ## Deliverable 📬
 
-- A **dashboard** to bring to Getaround team the main insights about rental delay analysis (accessible on [HuggingFace](https://huggingface.co/spaces/myriamgoyet/Getaround_dashboard))
-- A **Machine Learning model** trained to predict rental daily price according to the car caracteristiques (metrics of the model saved with [MLFlow](https://myriamgoyet-mlflow-getaround.hf.space/#/experiments/2?viewStateShareKey=18ffe60a67aa365fe49c7306d732974666332474b1684e47b8a1af1298c6cf2c&compareRunsMode=TABLE))
-- A **documented API** accessible from the dashboard with a /predict endpoint [API Documentation](https://myriamgoyet-api-getaround.hf.space/docs)
+- **A dashboard** to bring to Getaround team the main insights about rental delay analysis (accessible on [HuggingFace](https://huggingface.co/spaces/myriamgoyet/Getaround_dashboard))
+- **A Machine Learning model** trained to predict rental daily price according to the car caracteristiques (metrics of the model saved with [MLFlow](https://myriamgoyet-mlflow-getaround.hf.space/#/experiments/2?viewStateShareKey=18ffe60a67aa365fe49c7306d732974666332474b1684e47b8a1af1298c6cf2c&compareRunsMode=TABLE))
+- **A documented API** with a /predict endpoint to predict the rental price [API Documentation](https://myriamgoyet-api-getaround.hf.space/docs)
 
+The API is directly accessible from the dashboard, but you can also request the API from Git bash terminal or Python:   
 To send a request to the API from your Git Bash terminal, copy the curl command below and adjust the values to match your car's characteristics:
 ```
 curl -X POST https://myriamgoyet-api-getaround.hf.space/predict \
@@ -77,3 +76,9 @@ if response.status_code == 200:
 else:
     print("Request failed:", response.status_code, response.text)
 ```
+
+## What it looks like
+### 🎥 Demo Video
+
+<video src="streamlit-app-2025-07-14-19-07-93.webm" controls width="600"></video>
+
