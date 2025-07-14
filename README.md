@@ -80,5 +80,4 @@ else:
 ## What it looks like
 ### 🎥 Demo Video
 
-<video src="streamlit-app-2025-07-14-19-07-93.webm" controls width="600"></video>
-
+<video src="Dashboard streamlit/streamlit-app-2025-07-14-19-07-93.webm" controls width="600"></video>
