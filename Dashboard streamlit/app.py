@@ -118,6 +118,9 @@ page = st.sidebar.radio(
     key="page_selection"
 )
 
+st.sidebar.markdown("📄 [API documentation](https://myriamgoyet-api-getaround.hf.space/docs)")
+st.sidebar.markdown("📄 [API alternative docs](https://myriamgoyet-api-getaround.hf.space/redoc)")
+
 # Footer sidebar
 st.sidebar.write("")
 st.sidebar.write("Made with 💖 by [Myriam Goyet](https://github.com/myriamgoyet)")
