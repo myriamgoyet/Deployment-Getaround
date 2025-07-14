@@ -80,4 +80,5 @@ else:
 ## What it looks like
 ### 🎥 Demo Video
 
-👉 [Click here to watch the demo video](Dashboard%20streamlit/streamlit-app-2025-07-14-19-07-93.webm)
+👉 [Click here to watch the demo video(<img width="1183" height="583" alt="image" src="https://github.com/user-attachments/assets/9caff249-cb33-4e13-93f1-655bc874dab8" />)](https://drive.google.com/file/d/1jSXEpMA-g8JJjio9MFtjRoEuuqfpj9M4/view?usp=drive_link)
+
